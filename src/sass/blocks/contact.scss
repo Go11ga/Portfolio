@@ -1,0 +1,71 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__left {
+    width: 47%;
+    padding: 2rem;
+
+    @media($tabletH) {
+        width: 100%;
+    }
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+
+    list-style: none;
+
+    font-size: .94rem;
+    color: $black;
+    font-weight: 300;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .7rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__icon {
+    margin-right: .7rem;
+    width: 15px;
+    height: 15px;
+
+    fill: $black;
+}
+
+.contact__right {
+    width: 53%;
+
+    @media($tabletH) {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    @media($tabletV) {
+
+    }
+}
+
+.contact__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+

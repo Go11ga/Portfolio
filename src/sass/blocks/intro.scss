@@ -1,0 +1,117 @@
+.intro {
+    padding-top: 92px;
+}
+
+.intro__inner {
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+    display: flex;
+
+    border-bottom: 1px solid lighten($grey, 30%);
+
+    background: url("../img/symbols.png") right bottom no-repeat;
+
+    position: relative;
+
+    @media($tabletH){
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        background-size: 350px auto;
+    }
+
+    @media($mobile) {
+        background: none;
+    }
+}
+
+.intro__content {
+    width: 50%;
+
+    @media($mobile){
+        width: 100%;
+    }
+}
+
+.intro__subtitle {
+    font-size: 2.13rem;
+    color: $black;
+    font-weight: 200;
+
+    @media($tabletH){
+        font-size: 1.5rem;
+    }
+}
+
+.intro__title {
+    margin-bottom: 5px;
+
+    font-size: 3rem;
+    color: $black;
+    font-weight: 700;
+
+    @media($tabletH){
+        font-size: 2rem;
+    }
+}
+
+.intro__text {
+    margin-bottom: 25px;
+
+    font-size: 1.2rem;
+    color: lighten($black, 30%);
+}
+
+.intro__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    div {
+        + div {
+            margin-left: 1rem;
+
+            @media($tabletV) {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+
+        @media($tabletV) {
+            width: 100%;
+        }
+    }
+}
+
+.intro__photo {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
+
+    @media($tabletH){
+        width: 350px;
+    }
+
+    @media($mobile){
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

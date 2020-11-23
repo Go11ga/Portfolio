@@ -1,0 +1,26 @@
+.portfolio {
+    margin: 0 -1rem 2.8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__col {
+    width: 33.33333%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media($tabletV){
+        width: 50%;
+    }
+
+    @media($mobile){
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto 1rem;
+    }
+}
+
+.portfolio__col--hide {
+    display: none;
+}

@@ -1,0 +1,162 @@
+.about {
+    padding: 8.4rem 0;
+
+    @media($tabletH) {
+        padding: 3rem 0;
+    }
+
+    @media($mobile) {
+        padding: 1.5rem 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1090px;
+}
+
+.about__photo {
+    width: 50%;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 413px;
+        height: 413px;
+
+        background-color: #EFEFEF;
+
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    @media($tabletH) {
+        width: 100%;
+        order: 2;
+
+        &:before {
+            width: 100%;
+            height: 300px;
+
+            left: 0;
+        }
+    }
+}
+
+.about__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+
+    @media($tabletH) {
+        position: relative;
+    }
+}
+
+.about__content {
+    width: 50%;
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+
+    @media($tabletH) {
+        width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+        padding-right: 3.2rem;
+    }
+
+    @media($mobile) {
+        padding: 0 1rem;
+    }
+}
+
+.about__title {
+    font-size: 3rem;
+    color: $black;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    @media($screen) {
+        font-size: 2.5rem;
+    }
+}
+
+.about__bigtitle {
+    margin-bottom: 1.4rem;
+
+    font-size: 6.1rem;
+    color: lighten($black, 45%);
+    font-weight: 700;
+    line-height: 1.1;
+
+    text-transform: uppercase;
+
+    position: relative;
+    left: -10px;
+
+    @media($screen) {
+        font-size: 4rem;
+    }
+
+    @media($mobile) {
+        font-size: 3.2rem;
+    }
+}
+
+.about__text {
+    margin-bottom: 2.8rem;
+
+    font-size: .8rem;
+    color: $grey;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.about__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        + div {
+            margin-left: 1rem;
+
+            @media($mobile) {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+
+        @media($mobile) {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

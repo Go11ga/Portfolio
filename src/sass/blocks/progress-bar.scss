@@ -1,0 +1,41 @@
+.progress-bar {
+    margin-bottom: 2.6rem;
+}
+
+.progress-bar__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3rem;
+
+    @media($tabletV) {
+        justify-content: center;
+    }
+}
+
+.progress-bar__left {
+    width: 100px;
+}
+
+.progress-bar__title {
+    font-size: .94rem;
+    font-weight: 300;
+}
+
+.progress-bar__right {
+    padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+    width: 139px;
+    height: 6px;
+
+    background-color: $grey_light;
+}
+
+.progress-bar__progress {
+    height: 100%;
+
+    background-color: $grey;
+
+    transition: width .2s linear;
+}

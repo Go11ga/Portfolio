@@ -1,0 +1,62 @@
+/* Variables */
+@import "vars";
+
+
+/* Default styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/work";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
+@import "blocks/contact";
+@import "blocks/form";
+
+
+/* Helpers */
+@import "blocks/helpers";
+
+/* Slick */
+@import "vendor/slick";

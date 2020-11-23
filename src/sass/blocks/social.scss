@@ -1,0 +1,70 @@
+.social {
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.social__link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social__icon {
+    width: 41px;
+    height: 41px;
+
+    @media($tabletV) {
+        width: 35px;
+        height: 35px;
+    }
+
+    transition: fill .2s linear, transform .2s linear;
+
+    &:hover {
+        fill: $grey;
+        transform: translateY(-5px);
+    }
+}
+
+.social__icon--color1 {
+    fill: #1869FF;
+}
+
+.social__icon--color2 {
+    fill: #E51A68;
+}
+
+.social__icon--color3 {
+    fill: #007BB6;
+}
+
+.social__icon--color4 {
+    fill: #3A5898;
+}
+
+.social__icon--color5 {
+    fill: #13578A;
+}
+
+.social__icon--color6 {
+    fill: #56ACEF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
